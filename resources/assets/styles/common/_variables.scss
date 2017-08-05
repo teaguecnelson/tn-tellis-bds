@@ -2,6 +2,8 @@
 $bds-maroon: #690d33;
 $bds-brown: #e2d4ba;
 $bds-blue: #018fd7;
+$bds-light-grey: #f1f1f1;
+$bds-medium-grey: #ddd;
 $bds-dark-grey: #2a2b2a;
 
 $black: #000;
@@ -9,7 +11,7 @@ $white: #fff;
 $charcoal: $bds-dark-grey;
 
 /** Specific Colors */
-$text-color: #333;
+$text-color: #222;
 $text-on-dark: #aaa;
 $hero-cover-filter: #231f20;
 $amazon-orange: #faa81a;
@@ -18,7 +20,8 @@ $amazon-orange: #faa81a;
 $spacer: 2rem;
 
 /** Header  */
-$banner-height: 80px;
+$banner-height: 120px;
+$nav-height: 40px;
 
 /** Hero Section  */
 $mobile-hero-height: 80vh;

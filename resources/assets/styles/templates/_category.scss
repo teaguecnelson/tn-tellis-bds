@@ -1,0 +1,15 @@
+.category {
+  .content {
+    @include makeRow($no-padding:true);
+  }
+
+  .main {
+    @include makeColumn($size:12, $offset:0);
+    @include makeColumn(md, $size:8, $offset:0);
+  }
+
+  .sidebar {
+    @include makeColumn($size:12, $offset:0);
+    @include makeColumn(md, $size:4, $offset:0);
+  }
+}

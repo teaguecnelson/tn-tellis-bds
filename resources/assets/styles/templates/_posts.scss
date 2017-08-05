@@ -1,0 +1,59 @@
+.single {
+  .body {
+    background-color: #f7f7f7;
+  }
+
+  .body-wrap {
+    @include makeRow($no-padding:true);
+
+    max-width: 1240px;
+    margin: 0 0.25rem;
+
+    @include breakpoint($medium) {
+      margin: 0 auto;
+    }
+  }
+
+  .content-wrapper {
+    @include makeColumn($size:12, $offset:0);
+    @include makeColumn(lg, $size:10, $offset:2);
+
+    padding-top: 1.25rem;
+  }
+
+  .content {
+    @include makeRow($no-padding:true);
+  }
+
+  .main {
+    @include makeColumn($size:12, $offset:0);
+    @include makeColumn(lg, $size:8, $offset:0);
+  }
+
+  .sidebar-wrapper {
+    @include makeColumn($size:12, $offset:0);
+    @include makeColumn(lg, $size:4, $offset:0);
+
+    margin-top: 7.5rem;
+    padding: 0;
+  }
+
+  .sidebar {
+    padding: 1rem 2.5rem 2.5rem;
+    border: 1px solid $bds-medium-grey;
+  }
+
+  .entry-content {
+    max-width: 600px;
+
+    @include breakpoint($large) {
+      margin: 0 3rem 0 auto;
+    }
+  }
+
+  article header {
+    margin-left: -1.5rem;
+    margin-right: 3rem;
+    border-bottom: 3px solid $bds-light-grey;
+  }
+}

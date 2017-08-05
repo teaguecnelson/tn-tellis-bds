@@ -27,10 +27,10 @@ add_filter('body_class', function (array $classes) {
 });
 
 /**
- * Add "… Continued" to the excerpt
+ * Add "… Read More" to the excerpt
  */
 add_filter('excerpt_more', function () {
-    return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
+    return ' &hellip; <a href="' . get_permalink() . '">' . __('Read More', 'sage') . '</a>';
 });
 
 /**
@@ -67,4 +67,19 @@ add_filter('comments_template', function ($comments_template) {
         $comments_template
     );
     return template_path(locate_template(["views/{$comments_template}", $comments_template]) ?: $comments_template);
+});
+
+/**
+ * Tell Sage which templates to apply sidebar on
+ */
+add_filter('sage/display_sidebar', function ($display) {
+    static $display;
+
+    isset($display) || $display = in_array(true, [
+      // The sidebar will be displayed if any of the following return true
+      is_single(),
+      is_category()
+      // ... more types
+    ]);
+    return $display;
 });

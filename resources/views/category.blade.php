@@ -2,7 +2,6 @@
 
 @section('content')
   @include('partials.page-header')
-  @include('partials.sidebar-primary')
 
   @if (!have_posts())
     <div class="alert alert-warning">

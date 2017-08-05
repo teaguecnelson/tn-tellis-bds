@@ -17,18 +17,24 @@
 
 /** Atoms */
 @import "atoms/buttons";
+@import "atoms/text";
 @import "atoms/comments";
 @import "atoms/forms";
 @import "atoms/wp_classes";
 
 /** Molecules */
 @import "molecules/email_capture";
+@import "molecules/entry_meta";
 
 /** Organisms */
-@import "organisms/hero";
 @import "organisms/header";
+@import "organisms/hero";
 @import "organisms/sidebar";
 @import "organisms/footer";
-@import "organisms/pages";
-@import "organisms/posts";
 @import "organisms/tinymce";
+
+/** Templates */
+@import "templates/category";
+@import "templates/pages";
+@import "templates/posts";
+

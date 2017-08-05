@@ -11,6 +11,12 @@
     padding: 2rem 3rem;
   }
 
+  p,
+  h2,
+  h3 {
+    font-family: $secondary-font;
+  }
+
   a {
     color: $text-on-dark;
 
