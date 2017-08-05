@@ -1,0 +1,46 @@
+.mc_embed_signup {
+  background-color: $bds-maroon;
+  width: 100%;
+  margin: 0;
+}
+
+.email-capture-wrapper {
+  width: 100%;
+  padding: 0.8rem 1rem;
+}
+
+.email-prompt {
+  color: $white;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.email-input-wrapper {
+  position: relative;
+  height: 45px;
+  margin-top: 1.25rem;
+}
+
+.email-capture-box {
+  height: 45px;
+  background-color: $white;
+  width: 70%;
+}
+
+.email-box-text {
+  text-align: left;
+  padding: 10px;
+  color: gray;
+}
+
+.email-submit-button {
+  @extend %secondary-button;
+
+  position: absolute;
+  font-family: $primary-font;
+  height: 45px;
+  width: 30%;
+  min-width: 90px;
+  top: 0;
+  right: 0;
+}

@@ -1,0 +1,87 @@
+.hero-cover {
+  position: relative;
+  width: 100%;
+  height: $mobile-hero-height;
+  background-color: $hero-cover-filter;
+
+  @include breakpoint($medium) {
+    height: $hero-height;
+  }
+}
+
+.hero-img {
+  position: absolute;
+  background-image: url("../../images/bsdhero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: $mobile-hero-height;
+  vertical-align: middle;
+
+  @include breakpoint($medium) {
+    opacity: 1;
+    height: $hero-height;
+  }
+}
+
+.slogan-wrapper {
+  @include makeColumn($size:10, $offset:1);
+
+  text-align: center;
+  margin: auto;
+  opacity: 100;
+  padding: 1rem 0;
+
+  @include breakpoint($medium) {
+    padding: 4rem 0;
+  }
+}
+
+.slogan {
+  font-family: $secondary-font;
+  color: $white;
+  text-align: center;
+  font-size: 2.75rem;
+  line-height: 3.25rem;
+  z-index: 999;
+  padding: 0;
+  margin: 0 0 1.75rem;
+
+  @include breakpoint($medium) {
+    color: $white;
+    font-size: 4.25rem;
+    line-height: 4.5rem;
+  }
+}
+
+.slogan-subtitle {
+  font-family: $primary-font;
+  color: $white;
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  z-index: 999;
+
+  @include breakpoint($medium) {
+    color: $white;
+    font-size: 2.15rem;
+    line-height: 2.5rem;
+  }
+}
+
+.home-start-button {
+  @extend %secondary-button;
+
+  text-align: center;
+  font-family: $primary-font;
+  max-width: 80%;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid $white;
+
+  @include breakpoint($medium) {
+    max-width: 45%;
+    margin: 2rem auto 0;
+  }
+}

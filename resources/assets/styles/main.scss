@@ -1,4 +1,8 @@
+/** Global */
 @import "common/variables";
+@import "common/flex_grid";
+@import "common/typography";
+@import "common/global";
 
 /** Import everything from autoload */
 @import "./autoload/**/*";
@@ -11,15 +15,20 @@
  */
 // @import "~some-node-module";
 
-/** Import theme styles */
-@import "common/global";
-@import "components/buttons";
-@import "components/comments";
-@import "components/forms";
-@import "components/wp-classes";
-@import "layouts/header";
-@import "layouts/sidebar";
-@import "layouts/footer";
-@import "layouts/pages";
-@import "layouts/posts";
-@import "layouts/tinymce";
+/** Atoms */
+@import "atoms/buttons";
+@import "atoms/comments";
+@import "atoms/forms";
+@import "atoms/wp_classes";
+
+/** Molecules */
+@import "molecules/email_capture";
+
+/** Organisms */
+@import "organisms/hero";
+@import "organisms/header";
+@import "organisms/sidebar";
+@import "organisms/footer";
+@import "organisms/pages";
+@import "organisms/posts";
+@import "organisms/tinymce";

@@ -1,0 +1,93 @@
+.footer {
+  @include makeRow($no-padding:true);
+
+  width: 100%;
+  margin: 0;
+  background-color: $bds-dark-grey;
+  padding: 2rem 3rem;
+  border-bottom: 1px solid $text-on-dark;
+
+  @include breakpoint($large) {
+    padding: 2rem 3rem;
+  }
+
+  a {
+    color: $text-on-dark;
+
+    &hover {
+      color: $white;
+    }
+  }
+}
+
+.footer-wrapper-1 {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:3, $offset:0);
+  @include makeColumn(lg, $size:2, $offset:1);
+
+  padding-top: 1rem;
+}
+
+.footer-wrapper-2 {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:3, $offset:0);
+  @include makeColumn(lg, $size:3, $offset:0);
+
+  padding-top: 1rem;
+}
+
+.footer-wrapper-3 {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:3, $offset:0);
+  @include makeColumn(lg, $size:3, $offset:0);
+
+  padding-top: 1rem;
+}
+
+.footer-wrapper-4 {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:3, $offset:0);
+  @include makeColumn(lg, $size:2, $offset:0);
+
+  padding: 1rem 0.5rem;
+  margin: 1rem 0;
+  border-top: 1px solid $text-on-dark;
+
+  @include breakpoint($medium) {
+    padding: 1rem 0 0 2rem;
+    margin: 0;
+    border-top: none;
+    border-left: 1px solid $text-on-dark;
+  }
+}
+
+.footer-ul {
+  padding: 0;
+}
+
+.footer-ul li {
+  color: $white;
+  display: block;
+}
+
+.footer-division {
+  padding-top: 1rem;
+  color: $white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-h3 {
+  color: $text-on-dark;
+}
+
+.footer-contact {
+  color: $text-on-dark;
+  margin: 0;
+}
+
+.legal-line {
+  text-align: center;
+  background-color: $bds-dark-grey;
+  color: $text-on-dark;
+}
