@@ -21,9 +21,9 @@
 }
 
 .header-email {
-  width: 304px;
+  width: 319px;
   display: inline-block;
-  margin-right: 2rem;
+  margin-right: 1.75rem;
 }
 
 .header-search {
@@ -31,17 +31,39 @@
   display: inline-block;
 }
 
-.fa {
+.fa-search {
   font-size: 22px;
+  color: $placeholder-text-color;
 }
 
 .email-prompt {
   display: none;
 }
 
+.line {
+  position: relative;
+}
+
+.envelope-wrapper {
+  background-color: $white;
+  position: absolute;
+  left: 0;
+  width: 10px;
+  height: $header-email-height - 12px;
+  padding: 3px 4px 0;
+  margin: 3px 0;
+}
+
+.fa-envelope-o {
+  font-size: 19px;
+  color: $placeholder-text-color;
+}
+
 .site-header .email-capture-box {
-  width: 190px;
+  width: 182px;
   height: $header-email-height;
+  margin-left: -4px;
+  padding-left: 37px;
   border-radius: 2px 0 0 2px;
 }
 
