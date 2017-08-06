@@ -1,0 +1,77 @@
+.authenticity-organism {
+  width: 100%;
+  background-color: $bds-light-grey;
+}
+
+/* %three-up-margins found in global.scss */
+.authenticity-wrap {
+  @include makeRow($no-padding:true);
+
+  @extend %three-up-margins;
+}
+
+.editor-message {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:8, $offset:0);
+
+  padding: 1rem 0;
+
+  @include breakpoint($medium) {
+    padding: 1rem 2rem 1rem 0;
+  }
+}
+
+.editor-message-wrap {
+  @include makeRow($no-padding:true);
+}
+
+.editor-img-wrap {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:5, $offset:0);
+
+  padding: 0 0.75rem;
+}
+
+.editor-img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.editor-message-text {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:7, $offset:0);
+
+  padding: 1rem 0.75rem;
+
+  @include breakpoint($medium) {
+    padding: 0 0.75rem;
+  }
+
+  @include breakpoint($large) {
+    margin: 2rem 0;
+  }
+}
+
+.home-quiz {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:4, $offset:0);
+
+  padding: 0;
+  display: block;
+
+  @include breakpoint($medium) {
+    padding: 1rem 0 0 2rem;
+    border-left: 1px solid $bds-dark-grey;
+  }
+
+  @include breakpoint($large) {
+    margin: 2rem 0;
+  }
+}
+
+.home-quiz-button {
+  @extend %secondary-button;
+
+  font-family: $secondary-font;
+}

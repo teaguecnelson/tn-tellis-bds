@@ -1,0 +1,41 @@
+/* %three-up-margins found in global.scss */
+.three-up {
+  @extend %three-up-margins;
+}
+
+.three-up-header {
+  border-bottom: 3px solid $bds-light-grey;
+  margin: 1rem  0 0.5rem;
+}
+
+.three-up-wrap {
+  @include makeRow($no-padding:true);
+
+  @include breakpoint($medium) {
+    padding: 1rem 0;
+  }
+}
+
+.three-up-card {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:4, $offset:0);
+
+  padding: 0 0 2rem;
+
+  @include breakpoint($medium) {
+    padding: $md-card-padding;
+  }
+
+  @include breakpoint($large) {
+    padding: $lg-card-padding;
+  }
+}
+
+.three-up-title {
+  text-align: center;
+}
+
+.excerpts {
+  text-align: center;
+  margin: 1rem 0;
+}

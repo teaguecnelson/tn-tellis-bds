@@ -5,7 +5,7 @@
 }
 
 .header-inner {
-  padding: 0 4rem;
+  padding: $header-padding;
   margin: 0 auto;
 }
 
@@ -16,14 +16,36 @@
 }
 
 .header-right {
-  float: right;
+  display: none;
   height: $header-height;
+
+  @include breakpoint($header-medium-breakpoint) {
+    display: block;
+    float: right;
+  }
 }
 
 .header-email {
   width: 319px;
   display: inline-block;
   margin-right: 1.75rem;
+}
+
+.site-header .email-prompt {
+  display: none;
+}
+
+.site-header .line {
+  width: 323px;
+  margin-top: 17px;
+}
+
+.site-header .email-capture-box {
+  width: 182px;
+}
+
+.site-header .email-submit-button {
+  width: 94px;
 }
 
 .header-search {
@@ -34,42 +56,4 @@
 .fa-search {
   font-size: 22px;
   color: $placeholder-text-color;
-}
-
-.email-prompt {
-  display: none;
-}
-
-.line {
-  position: relative;
-}
-
-.envelope-wrapper {
-  background-color: $white;
-  position: absolute;
-  left: 0;
-  width: 10px;
-  height: $header-email-height - 12px;
-  padding: 3px 4px 0;
-  margin: 3px 0;
-}
-
-.fa-envelope-o {
-  font-size: 19px;
-  color: $placeholder-text-color;
-}
-
-.site-header .email-capture-box {
-  width: 182px;
-  height: $header-email-height;
-  margin-left: -4px;
-  padding-left: 37px;
-  border-radius: 2px 0 0 2px;
-}
-
-.site-header .email-submit-button {
-  width: 94px;
-  height: $header-email-height;
-  padding: 6px;
-  border-radius: 0 2px 2px 0;
 }

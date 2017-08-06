@@ -16,35 +16,52 @@
 
 .visible-wrapper {
   width: 304px;
+  margin: auto;
 
   @include breakpoint($medium) {
     width: 100%;
   }
 }
 
-.email-input-wrapper {
+.line {
   position: relative;
+  width: 323px;
   height: 45px;
-  margin-top: 1.25rem;
-  width: 304px;
+  margin: 1.25rem auto 0;
 
   @include breakpoint($medium) {
-    width: auto;
+    width: 550px;
   }
+}
+
+.envelope-icon-wrapper {
+  position: absolute;
+  left: 0;
+  background-color: $white;
+  width: 10px;
+  height: $email-input-height - 12px;
+  padding: 0 4px;
+  margin: 6px 0 6px 4px;
+}
+
+.fa-envelope-o {
+  font-size: 19px;
+  color: $placeholder-text-color;
 }
 
 .email-capture-box {
   height: $email-input-height;
   background-color: $white;
-  width: 190px;
+  width: 182px;
   border: none;
-  padding: 0 10px;
+  padding: 0 10px 0 39px;
   font-size: $xtra-small-point-size;
   font-family: $secondary-font;
   font-weight: bold;
+  border-radius: 2px 0 0 2px;
 
   @include breakpoint($medium) {
-    width: 70%;
+    width: 323px;
   }
 }
 
@@ -57,9 +74,11 @@
   top: 0;
   right: 0;
   font-weight: bold;
+  padding: 6px;
   font-size: $small-point-size;
+  border-radius: 0 2px 2px 0;
 
   @include breakpoint($medium) {
-    width: 30%;
+    width: 180px;
   }
 }

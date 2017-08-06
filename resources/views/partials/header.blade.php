@@ -6,7 +6,7 @@
         @include('partials.email-input')
       </div>
       <div class="header-search">
-      <i class="fa fa-search" aria-hidden="true"></i>
+      <a href="/search-backdoor-survival/"><i class="fa fa-search" aria-hidden="true"></i></a>
       <div/>
     </div>
   </div>

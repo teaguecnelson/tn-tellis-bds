@@ -5,10 +5,28 @@
 
 .nav {
   background-color: $bds-light-grey;
-  margin: 0;
   height: $nav-height;
+  margin: 0 auto;
+  padding: $header-padding;
 }
 
 .menu-item {
   display: inline;
+}
+
+.menu-item a {
+  font-family: $secondary-font;
+  font-size: $xtra-small-point-size;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 40px;
+  padding: 11px 0.5rem;
+  color: $text-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: green;
+    color: $white;
+  }
 }

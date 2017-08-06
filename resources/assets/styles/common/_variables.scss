@@ -21,14 +21,19 @@ $placeholder-text-color: #757575;
 $spacer: 2rem;
 
 /** Email Molecule  */
-$email-input-height: 45px;
+$email-input-height: 37px;
 
 /** Header  */
-$header-email-height: 37px;
-$header-height: 80px;
+$header-medium-breakpoint: 845px;
+$header-height: 70px;
 $nav-height: 40px;
+$header-padding: 0 4rem;
 
 /** Hero Section  */
 $mobile-hero-height: 80vh;
 $hero-height: 475px;
 $hero-cover-filter: #231f20;
+
+/** Three Up Cards  */
+$md-card-padding: 0 1rem;
+$lg-card-padding: 0 2rem;

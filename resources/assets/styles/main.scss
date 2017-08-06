@@ -27,9 +27,12 @@
 @import "molecules/entry_meta";
 
 /** Organisms */
+@import "organisms/three_up_mixins";
 @import "organisms/header";
 @import "organisms/nav";
 @import "organisms/hero";
+@import "organisms/three_up_styling";
+@import "organisms/authenticity";
 @import "organisms/sidebar";
 @import "organisms/footer";
 @import "organisms/tinymce";
@@ -38,4 +41,3 @@
 @import "templates/category";
 @import "templates/pages";
 @import "templates/posts";
-

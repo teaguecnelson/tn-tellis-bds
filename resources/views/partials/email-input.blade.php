@@ -2,16 +2,14 @@
 	<div id="mc_embed_signup_scroll">
 		<div class="visible-wrapper">
 			<label for="mce-EMAIL" class="email-prompt-wrapper"><h4 class="email-prompt">Prepping Tips, Updates and Deals. Daily or Weekly</h4></label>
-			<div class="email-input-wrapper">
-				<div class="line">
-					<div class="envelope-wrapper">
-						<i class="fa fa-envelope-o" aria-hidden="true"></i>
-					</div>
-					<input type="email" value="" name="EMAIL" class="email-capture-box" id="mce-EMAIL" placeholder="YOUR EMAIL" required>
-					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_10dbfb95b10b0055960e52187_8dab905704" tabindex="-1" value=""></div>
-					<div class="clear"><input type="submit" value="SIGN UP" name="subscribe" id="mc-embedded-subscribe" class="email-submit-button"></div>
+			<div class="line">
+				<div class="envelope-icon-wrapper">
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
 				</div>
+				<input type="email" value="" name="EMAIL" class="email-capture-box" id="mce-EMAIL" placeholder="YOUR EMAIL" required>
+				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_10dbfb95b10b0055960e52187_8dab905704" tabindex="-1" value=""></div>
+				<div class="clear"><input type="submit" value="SIGN UP" name="subscribe" id="mc-embedded-subscribe" class="email-submit-button"></div>
 			</div>
 		</div>
 	</div>

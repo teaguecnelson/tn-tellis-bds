@@ -56,12 +56,12 @@
 }
 
 .slogan-subtitle {
-  font-family: $primary-font;
+  font-family: $secondary-font;
   color: $white;
   text-align: center;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
+  font-size: 1.25rem;
   z-index: 999;
+  margin: 0;
 
   @include breakpoint($medium) {
     color: $white;
