@@ -5,8 +5,8 @@
 }
 
 .header-inner {
-  max-width: 1200px;
-  padding: 0 30px;
+  padding: 0 4rem;
+  margin: 0 auto;
 }
 
 .logo {
@@ -16,20 +16,38 @@
 }
 
 .header-right {
-  @include makeRow($no-padding:true);
-
   float: right;
-  width: 400px;
+  height: $header-height;
 }
 
 .header-email {
-  @include makeColumn(md, $size:9, $offset:0);
+  width: 304px;
+  display: inline-block;
+  margin-right: 2rem;
 }
 
 .header-search {
-  @include makeColumn(md, $size:3, $offset:0);
+  width: 30px;
+  display: inline-block;
+}
+
+.fa {
+  font-size: 22px;
 }
 
 .email-prompt {
   display: none;
+}
+
+.site-header .email-capture-box {
+  width: 190px;
+  height: $header-email-height;
+  border-radius: 2px 0 0 2px;
+}
+
+.site-header .email-submit-button {
+  width: 94px;
+  height: $header-email-height;
+  padding: 6px;
+  border-radius: 0 2px 2px 0;
 }

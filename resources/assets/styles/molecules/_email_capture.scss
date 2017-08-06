@@ -5,7 +5,6 @@
 }
 
 .email-capture-wrapper {
-  width: 100%;
   padding: 0.8rem 1rem;
 }
 
@@ -15,31 +14,52 @@
   margin: 0 0 20px;
 }
 
+.visible-wrapper {
+  width: 304px;
+
+  @include breakpoint($medium) {
+    width: 100%;
+  }
+}
+
 .email-input-wrapper {
   position: relative;
   height: 45px;
   margin-top: 1.25rem;
+  width: 304px;
+
+  @include breakpoint($medium) {
+    width: auto;
+  }
 }
 
 .email-capture-box {
-  height: 45px;
+  height: $email-input-height;
   background-color: $white;
-  width: 70%;
-}
+  width: 190px;
+  border: none;
+  padding: 0 10px;
+  font-size: $xtra-small-point-size;
+  font-family: $secondary-font;
+  font-weight: bold;
 
-.email-box-text {
-  text-align: left;
-  padding: 10px;
-  color: gray;
+  @include breakpoint($medium) {
+    width: 70%;
+  }
 }
 
 .email-submit-button {
   @extend %secondary-button;
 
   position: absolute;
-  height: 45px;
-  width: 30%;
-  min-width: 94px;
+  height: $email-input-height;
+  width: 94px;
   top: 0;
   right: 0;
+  font-weight: bold;
+  font-size: $small-point-size;
+
+  @include breakpoint($medium) {
+    width: 30%;
+  }
 }
