@@ -4,6 +4,7 @@
   <body @php(body_class())>
     @php(do_action('get_header'))
     @include('partials.header')
+    @include('partials.nav')
     <div class="body-wrap wrap container" role="document">
       <div class="content-wrapper">
         <div class="content">

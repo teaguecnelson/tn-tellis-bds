@@ -96,4 +96,9 @@
   text-align: center;
   background-color: $bds-dark-grey;
   color: $text-on-dark;
+
+  p {
+    font-family: $secondary-font;
+    font-size: $small-point-size;
+  }
 }

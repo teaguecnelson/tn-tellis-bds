@@ -1,10 +1,13 @@
-<header class="banner">
-  <div class="container">
-    <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
-    <nav class="nav-primary">
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
-    </nav>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo-wrapper" href="{{ home_url('/') }}"><img class="logo" src="https://www.backdoorsurvival.com/wp-content/uploads/2016/10/gaye-levy-logo-192px-optimized.png" /></a>
+    <div class="header-right">
+      <div class="header-email">
+        @include('partials.email-input')
+      </div>
+      <div class="header-search">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <div/>
+    </div>
   </div>
 </header>
