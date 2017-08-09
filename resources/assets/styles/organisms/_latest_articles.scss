@@ -1,0 +1,8 @@
+.latest-articles-section {
+  @include makeRow($no-padding:true);
+}
+
+.latest-articles-section article {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:6, $offset:0);
+}
