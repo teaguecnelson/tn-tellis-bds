@@ -4,7 +4,6 @@
   color: $textColor;
   background-color: $bgColor;
   border: 1px solid $borderColor;
-  border-radius: 0;
   width: 100%;
   padding: 0.5rem;
   cursor: pointer;
@@ -15,6 +14,8 @@
   height: auto;
   margin-bottom: 0.5rem;
   white-space: normal;
+  border-radius: 2px;
+  max-width: 20rem;
 
   &:hover {
     background-color: darken($bgColor, 10%);

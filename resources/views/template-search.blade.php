@@ -1,5 +1,5 @@
 {{--
-  Template Name: Custom Template
+  Template Name: Search Template
 --}}
 
 @extends('layouts.app')
@@ -9,4 +9,5 @@
     @include('partials.page-header')
     @include('partials.content-page')
   @endwhile
+  @include('partials.sidebar-search')
 @endsection

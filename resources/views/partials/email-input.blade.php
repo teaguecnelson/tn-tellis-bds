@@ -1,7 +1,7 @@
 <form action="//backdoorsurvival.us2.list-manage.com/subscribe/post?u=10dbfb95b10b0055960e52187&amp;id=8dab905704" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 	<div id="mc_embed_signup_scroll">
 		<div class="visible-wrapper">
-			<label for="mce-EMAIL" class="email-prompt-wrapper"><h4 class="email-prompt">Prepping Tips, Updates and Deals. Daily or Weekly</h4></label>
+			<label for="mce-EMAIL" class="email-prompt-wrapper"><h4 class="email-prompt">Free Prepping Tips, Updates and Deals. Daily or Weekly</h4></label>
 			<div class="line">
 				<div class="envelope-icon-wrapper">
 					<i class="fa fa-envelope-o" aria-hidden="true"></i>

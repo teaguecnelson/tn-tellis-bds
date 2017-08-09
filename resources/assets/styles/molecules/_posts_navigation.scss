@@ -1,0 +1,19 @@
+.posts-navigation {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.nav-previous,
+.nav-next {
+  @extend %secondary-button;
+
+  text-decoration: none;
+  font-family: $secondary-font;
+  margin: 1rem auto;
+}
+
+.nav-previous a,
+.nav-next a {
+  color: $white;
+  text-decoration: none;
+}

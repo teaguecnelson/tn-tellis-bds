@@ -20,11 +20,13 @@
 @import "atoms/text";
 @import "atoms/comments";
 @import "atoms/forms";
+@import "atoms/social_buttons";
 @import "atoms/wp_classes";
 
 /** Molecules */
 @import "molecules/email_capture";
 @import "molecules/entry_meta";
+@import "molecules/posts_navigation";
 
 /** Organisms */
 @import "organisms/three_up_mixins";
