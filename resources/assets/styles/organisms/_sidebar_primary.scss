@@ -1,0 +1,19 @@
+.sidebar {
+  padding: 1rem 2.5rem 2.5rem;
+  border: 1px solid $bds-medium-grey;
+
+  h2,
+  h3,
+  h4 {
+    font-family: $secondary-font;
+  }
+
+  p {
+    font-size: $small-point-size;
+  }
+
+  @include breakpoint($medium) {
+    padding: 1rem 1.5rem 2.5rem;
+    margin-left: 2rem;
+  }
+}

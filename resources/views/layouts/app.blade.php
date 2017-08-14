@@ -2,6 +2,7 @@
 <html @php(language_attributes())>
   @include('partials.head')
   <body @php(body_class())>
+    <div class="add-clear"></div>
     @php(do_action('get_header'))
     @include('partials.nav')
     @include('partials.header')

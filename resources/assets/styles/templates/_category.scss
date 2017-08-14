@@ -1,15 +1,38 @@
 .category {
+  .body-wrap {
+    @include makeRow($no-padding:true);
+
+    max-width: 1240px;
+    margin: 0 0.25rem;
+
+    @include breakpoint($medium) {
+      margin: 0 auto;
+    }
+  }
+
+  .content-wrapper {
+    @include makeColumn($size:12, $offset:0);
+    @include makeColumn(md, $size:11, $offset:1);
+
+    padding-top: 1.25rem;
+  }
+
   .content {
     @include makeRow($no-padding:true);
   }
 
   .main {
     @include makeColumn($size:12, $offset:0);
-    @include makeColumn(md, $size:8, $offset:0);
+    @include makeColumn(md, $size:7, $offset:0);
+    @include makeColumn(lg, $size:8, $offset:0);
   }
 
   .sidebar-wrapper {
     @include makeColumn($size:12, $offset:0);
     @include makeColumn(md, $size:4, $offset:0);
+    @include makeColumn(lg, $size:4, $offset:0);
+
+    margin-top: 7.5rem;
+    padding: 0;
   }
 }

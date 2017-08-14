@@ -40,16 +40,6 @@
     padding: 0;
   }
 
-  .sidebar {
-    padding: 1rem 2.5rem 2.5rem;
-    border: 1px solid $bds-medium-grey;
-
-    @include breakpoint($medium) {
-      padding: 1rem 1.5rem 2.5rem;
-      margin-left: 2rem;
-    }
-  }
-
   .entry-content {
     max-width: 630px;
     margin: auto;
