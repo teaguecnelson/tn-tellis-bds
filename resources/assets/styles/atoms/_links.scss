@@ -1,0 +1,15 @@
+%home-header-links {
+  color: $text-color;
+
+  &:hover {
+    color: blue;
+  }
+}
+
+%footer-links {
+  color: $text-on-dark;
+
+  &:hover {
+    color: $white;
+  }
+}

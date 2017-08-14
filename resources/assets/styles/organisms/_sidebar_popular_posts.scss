@@ -1,0 +1,30 @@
+.most-popular-section {
+  @extend %three-up-margins;
+}
+
+.swp_widget_box {
+  @include makeRow($no-padding:true);
+}
+
+.swp_popular_post {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:4, $offset:0);
+
+  text-align: center;
+}
+
+// In text.scss
+.swp_popularity b {
+  @extend %homepage-h2;
+
+  // In links.scss
+  @extend %home-header-links;
+}
+
+// In entry-meta.scss
+.swp_pop_count {
+  @extend %entry-meta;
+
+  color: $text-color;
+  margin: 0.5rem 0;
+}

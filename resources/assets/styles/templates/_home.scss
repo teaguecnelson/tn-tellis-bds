@@ -1,0 +1,25 @@
+.home {
+  // In text.scss
+  h2 {
+    @extend %homepage-h2;
+
+    // In links.scss
+    a {
+      @extend %home-header-links;
+    }
+  }
+
+  p {
+    font-size: 19px;
+  }
+
+  // In entry-meta.scss
+  .date-updated,
+  .byline {
+    @extend %entry-meta;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

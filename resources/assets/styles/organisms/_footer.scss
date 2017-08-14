@@ -17,12 +17,9 @@
     font-family: $secondary-font;
   }
 
+  // In links.scss
   a {
-    color: $text-on-dark;
-
-    &:hover {
-      color: $white;
-    }
+    @extend %footer-links;
   }
 }
 
@@ -100,5 +97,10 @@
   p {
     font-family: $secondary-font;
     font-size: $small-point-size;
+  }
+
+  // In links.scss
+  a {
+    @extend %footer-links;
   }
 }

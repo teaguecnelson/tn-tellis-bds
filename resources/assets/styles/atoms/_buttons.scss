@@ -16,6 +16,7 @@
   white-space: normal;
   border-radius: 2px;
   max-width: 20rem;
+  font-weight: bold;
 
   &:hover {
     background-color: darken($bgColor, 10%);

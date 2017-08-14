@@ -22,6 +22,7 @@
 @import "atoms/forms";
 @import "atoms/social_buttons";
 @import "atoms/wp_classes";
+@import "atoms/links";
 
 /** Molecules */
 @import "molecules/email_capture";
@@ -34,6 +35,7 @@
 @import "organisms/nav";
 @import "organisms/hero";
 @import "organisms/three_up_styling";
+@import "organisms/sidebar_popular_posts";
 @import "organisms/authenticity";
 @import "organisms/latest_articles";
 @import "organisms/sidebar";
@@ -44,3 +46,4 @@
 @import "templates/category";
 @import "templates/pages";
 @import "templates/posts";
+@import "templates/home";

@@ -8,7 +8,7 @@
   @include('partials.authenticity-organism')
 
   <div class="three-up">
-    <h2 class="three-up-header latest-articles-header">Latest Articles</h2>
+    <h4 class="three-up-header latest-articles-header">The Latest</h4>
     <div class="front-latest-articles-section">
       @if (!have_posts())
         <div class="alert alert-warning">

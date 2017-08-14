@@ -53,6 +53,10 @@
   }
 }
 
+.editor-message-text p {
+  margin-top: 0;
+}
+
 .home-quiz {
   @include makeColumn($size:12, $offset:0);
   @include makeColumn(md, $size:4, $offset:0);
