@@ -4,7 +4,6 @@
   <body @php(body_class())>
     <div class="add-clear"></div>
     @php(do_action('get_header'))
-    @include('partials.nav')
     @include('partials.header')
     <div class="body-wrap wrap container" role="document">
       <div class="content-wrapper">

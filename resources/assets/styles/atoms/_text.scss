@@ -25,10 +25,7 @@ h2 {
 
 %homepage-h2 {
   font-family: $secondary-font;
-
-  @include breakpoint($large) {
-    font-size: 1.25rem;
-  }
+  font-size: 1.25rem;
 }
 
 h3 {
