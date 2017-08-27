@@ -33,7 +33,7 @@
   padding: 1rem 0;
 
   @include breakpoint($medium) {
-    padding: 4.75rem 0;
+    padding: 5rem 0;
   }
 }
 
@@ -77,6 +77,6 @@
 
   @include breakpoint($medium) {
     max-width: 45%;
-    margin: 3.75rem auto 0;
+    margin: 3rem auto 0;
   }
 }

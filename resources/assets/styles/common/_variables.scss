@@ -4,18 +4,19 @@ $bds-brown: #e2d4ba;
 $bds-blue: #018fd7;
 $bds-light-grey: #f1f1f1;
 $bds-medium-grey: #ddd;
+$bds-medium-dark-grey: #757575;
 $bds-dark-grey: #2a2b2a;
 
 $black: #000;
 $white: #fff;
 $charcoal: $bds-dark-grey;
+$placeholder-text-color: $bds-medium-dark-grey;
 
 /** Specific Colors */
 $text-color: #222;
 $text-on-dark: #aaa;
 $hero-cover-filter: #231f20;
 $amazon-orange: #faa81a;
-$placeholder-text-color: #757575;
 
 /** Box Model  */
 $spacer: 2rem;

@@ -2,7 +2,7 @@
   display: block;
   overflow: hidden;
   background-color: $bds-light-grey;
-  width: $medium;
+  width: 100%;
 }
 
 .menu-item {
@@ -12,12 +12,12 @@
 .nav {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .topnav a,
 .topnav .menu-item a {
-  float: left;
-  display: block;
+  display: inline;
   color: $text-color;
   text-align: center;
   padding: 1rem 0.5rem;
@@ -34,8 +34,70 @@
   }
 }
 
+.nav-wrapper {
+  border-bottom: 2px solid $bds-medium-dark-grey;
+  margin: 0 auto 0.85rem;
+  width: 90%;
+}
+
+.email-nav-capture {
+  width: 100%;
+}
+
+.email-nav-capture-wrapper {
+  @include makeRow($no-padding:true);
+
+  background-color: $bds-maroon;
+  margin: 0;
+  padding: 0 5px;
+
+  @include breakpoint($medium) {
+    margin: 0 5rem 0.85rem;
+    padding: 0 3rem;
+  }
+
+  @include breakpoint($large) {
+    padding: 0 9rem;
+  }
+}
+
+.topnav.responsive .email-nav-capture,
+.topnav.responsive .nav-wrapper {
+  display: block;
+}
+
+.efbg {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:5, $offset:0);
+
+  padding: 1.5rem 4.5rem;
+}
+
+.topnav .email-nav-capture-form {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:7, $offset:0);
+
+  padding: 0 0 1rem;
+
+  @include breakpoint($medium) {
+    padding: 1.5rem 0 0;
+  }
+
+  @include breakpoint($large) {
+    padding: 2.5rem 0 0;
+  }
+}
+
+.nav-email-header {
+  color: $white;
+  text-align: center;
+  font-family: $primary-font !important;
+}
+
 .topnav a:not(:first-child),
-.topnav div ul .menu-item a {
+.topnav div ul .menu-item a,
+.topnav .email-nav-capture,
+.topnav .nav-wrapper {
   display: none;
 }
 
@@ -48,4 +110,9 @@
   float: none;
   display: block;
   text-align: left;
+
+  @include breakpoint($medium) {
+    display: inline-block;
+    padding: 2.5rem 2rem;
+  }
 }
