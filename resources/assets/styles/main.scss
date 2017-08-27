@@ -26,11 +26,12 @@
 
 /** Molecules */
 @import "molecules/email_capture";
+@import "molecules/email_hook";
 @import "molecules/entry_meta";
 @import "molecules/posts_navigation";
+@import "molecules/three_up_mixins";
 
-/** Organism */
-@import "organisms/three_up_mixins";
+/** Organisms */
 @import "organisms/header";
 @import "organisms/nav";
 @import "organisms/hero";
@@ -44,7 +45,8 @@
 
 /** Templates */
 @import "templates/category";
-@import "templates/pages";
 @import "templates/single";
-@import "templates/home";
+@import "templates/front_page";
 @import "templates/search";
+@import "templates/404";
+@import "templates/page_template_default";

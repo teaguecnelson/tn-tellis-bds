@@ -1,0 +1,48 @@
+.email-hook {
+  width: 100%;
+}
+
+.email-hook-inner-wrapper {
+  @include makeRow($no-padding:true);
+
+  background-color: $bds-maroon;
+  margin: 0;
+  padding: 0 5px;
+
+  @include breakpoint($medium) {
+    margin: 0 5rem 0.85rem;
+    padding: 0 3rem;
+  }
+
+  @include breakpoint($large) {
+    padding: 0 9rem;
+  }
+}
+
+.hook-reward {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:5, $offset:0);
+
+  padding: 1.5rem 4.5rem;
+}
+
+.email-hook-form {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:7, $offset:0);
+
+  padding: 0 0 1rem;
+
+  @include breakpoint($medium) {
+    padding: 1.5rem 0 0;
+  }
+
+  @include breakpoint($large) {
+    padding: 2.5rem 0 0;
+  }
+}
+
+.email-hook-header {
+  color: $white;
+  text-align: center;
+  font-family: $primary-font;
+}
