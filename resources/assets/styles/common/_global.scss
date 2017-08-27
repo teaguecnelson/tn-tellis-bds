@@ -12,6 +12,11 @@ body {
   // FIXME: Remove after adding autoprefixer
   display: -webkit-flex;
   -webkit-flex-direction: column;
+  background-color: #efefef;
+}
+
+.body-outer-wrap {
+  background-color: #fff;
 }
 
 code {
