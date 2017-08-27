@@ -4,7 +4,6 @@
 	        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
 	    @endif
 	</div>
-    @include('partials.email-hook')
 </nav>
 
 <script>

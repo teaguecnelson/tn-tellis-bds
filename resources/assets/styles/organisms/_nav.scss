@@ -34,9 +34,8 @@
 }
 
 .nav-wrapper {
-  border-bottom: 2px solid $bds-medium-dark-grey;
-  margin: 0 auto 0.85rem;
   width: 90%;
+  margin: 0 auto;
 }
 
 .topnav a:not(:first-child),
@@ -53,6 +52,7 @@
 
 .topnav.responsive {
   position: relative;
+  border-bottom: 2px solid $bds-medium-grey;
 }
 
 .topnav.responsive a,
