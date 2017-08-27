@@ -32,7 +32,7 @@ h3 {
   @include header(1.25rem);
 
   @include breakpoint($large) {
-    font-size: 1.17rem;
+    font-size: 1.05rem;
   }
 }
 

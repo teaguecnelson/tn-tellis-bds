@@ -29,7 +29,7 @@
 @import "molecules/entry_meta";
 @import "molecules/posts_navigation";
 
-/** Organisms */
+/** Organism */
 @import "organisms/three_up_mixins";
 @import "organisms/header";
 @import "organisms/nav";
@@ -45,6 +45,6 @@
 /** Templates */
 @import "templates/category";
 @import "templates/pages";
-@import "templates/posts";
+@import "templates/single";
 @import "templates/home";
 @import "templates/search";

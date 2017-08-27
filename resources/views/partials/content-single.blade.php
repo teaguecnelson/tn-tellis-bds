@@ -1,7 +1,9 @@
 <article @php(post_class())>
   <header>
-    @include('partials/entry-meta')
     <h1 class="entry-title">{{ get_the_title() }}</h1>
+    <div class="entry-meta">
+      @include('partials/entry-meta')
+    </div>
   </header>
   <div class="entry-content">
     @php(the_content())

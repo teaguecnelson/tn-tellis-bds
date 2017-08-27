@@ -11,7 +11,7 @@
 
 .hero-img {
   position: absolute;
-  background-image: url("../../images/bsdhero.jpg");
+  background-image: url("../../images/bdshero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -28,13 +28,12 @@
 .slogan-wrapper {
   @include makeColumn($size:10, $offset:1);
 
-  text-align: center;
   margin: auto;
   opacity: 100;
   padding: 1rem 0;
 
   @include breakpoint($medium) {
-    padding: 4rem 0;
+    padding: 4.75rem 0;
   }
 }
 
@@ -42,16 +41,16 @@
   font-family: $secondary-font;
   color: $white;
   text-align: center;
-  font-size: 2.75rem;
+  font-size: 2.8rem;
   line-height: 3.25rem;
   z-index: 999;
   padding: 0;
-  margin: 0 0 1.75rem;
+  margin: 0 0 1.5rem;
 
   @include breakpoint($medium) {
     color: $white;
-    font-size: 4.25rem;
-    line-height: 4.5rem;
+    font-size: 3.85rem;
+    line-height: 4rem;
   }
 }
 
@@ -63,7 +62,7 @@
   margin: 0;
 
   @include breakpoint($medium) {
-    line-height: 2.5rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -72,12 +71,12 @@
 
   text-align: center;
   max-width: 80%;
-  margin: 0 auto;
+  margin: 1.5rem auto 0;
   display: block;
   border: 2px solid $white;
 
   @include breakpoint($medium) {
     max-width: 45%;
-    margin: 2rem auto 0;
+    margin: 3.75rem auto 0;
   }
 }

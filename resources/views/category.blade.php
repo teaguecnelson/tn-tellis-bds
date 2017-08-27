@@ -1,8 +1,12 @@
 @extends('layouts.app')
 
-@section('content')
-  @include('partials.page-header')
+@section('mini-hero')
+  <div class="category-hero">
+    @include('partials.page-header')
+  </div>
+@endsection
 
+@section('content')
   @if (!have_posts())
     <div class="alert alert-warning">
       {{ __('Sorry, no results were found.', 'sage') }}

@@ -40,6 +40,10 @@
     padding: 0;
   }
 
+  .entry-meta {
+    margin-bottom: 0.75rem;
+  }
+
   .entry-content {
     max-width: 630px;
     margin: auto;
@@ -53,10 +57,6 @@
     border-bottom: 3px solid $bds-light-grey;
     max-width: 630px;
     margin: auto;
-
-    @include breakpoint($medium) {
-      margin-left: -1rem;
-    }
 
     @include breakpoint($large) {
       margin-left: -1.85rem;

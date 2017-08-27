@@ -5,6 +5,7 @@
     <div class="add-clear"></div>
     @php(do_action('get_header'))
     @include('partials.header')
+    @yield('mini-hero')
     <div class="body-wrap wrap container" role="document">
       <div class="content-wrapper">
         <div class="content">

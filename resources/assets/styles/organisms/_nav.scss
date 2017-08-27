@@ -1,7 +1,8 @@
 .topnav {
+  display: block;
   overflow: hidden;
   background-color: $bds-light-grey;
-  padding: $header-padding;
+  width: $medium;
 }
 
 .menu-item {
@@ -10,6 +11,7 @@
 
 .nav {
   margin: 0;
+  padding: 0;
 }
 
 .topnav a,
@@ -18,10 +20,10 @@
   display: block;
   color: $text-color;
   text-align: center;
-  padding: 11px 0.5rem;
+  padding: 1rem 0.5rem;
   text-decoration: none;
   font-family: $secondary-font;
-  font-size: $xtra-small-point-size;
+  font-size: $small-point-size;
   font-weight: bold;
 
   &:hover,
@@ -32,37 +34,18 @@
   }
 }
 
-.topnav .icon {
+.topnav a:not(:first-child),
+.topnav div ul .menu-item a {
   display: none;
 }
 
-@media screen and (max-width: 845px) {
-  .topnav a:not(:first-child),
-  .topnav div ul .menu-item a {
-    display: none;
-  }
-
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+.topnav.responsive {
+  position: relative;
 }
 
-@media screen and (max-width: 845px) {
-  .topnav.responsive {
-    position: relative;
-  }
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav.responsive a,
-  .topnav.responsive div ul .menu-item a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+.topnav.responsive a,
+.topnav.responsive div ul .menu-item a {
+  float: none;
+  display: block;
+  text-align: left;
 }

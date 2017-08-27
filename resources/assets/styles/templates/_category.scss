@@ -36,3 +36,32 @@
     padding: 0;
   }
 }
+
+.category-diy .category-hero {
+  width: 100%;
+  background-image: url("../../images/diy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.category .page-header {
+  padding: 5rem 0;
+  color: $white;
+  text-align: center;
+}
+
+.category h2 {
+  font-family: $secondary-font;
+  margin-bottom: 0.25rem;
+
+  a {
+    @extend %home-header-links;
+
+    text-decoration: none;
+  }
+}
+
+.category .post {
+  margin: 0.75rem 0;
+}

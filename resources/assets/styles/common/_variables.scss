@@ -24,9 +24,11 @@ $spacer: 2rem;
 $email-input-height: 37px;
 
 /** Header & Nav  */
-$header-medium-breakpoint: 845px;
-$header-height: 70px;
-$header-padding: 0 4rem;
+$header-medium-breakpoint: 1025px;
+$header-height: 75px;
+$header-padding-large: 0 4rem;
+$header-padding-medium: 0 2rem;
+$header-padding-small: 0 5px;
 
 /** Hero Section  */
 $mobile-hero-height: 80vh;
