@@ -25,9 +25,9 @@
 #menu-icon {
   float: left;
   padding: 0 1rem 0 5px;
-  font-size: 42px;
+  font-size: 41px;
   color: $bds-dark-grey;
-  margin: 6px 0 0;
+  margin: 2px 0 0;
   text-decoration: none;
 
   @include breakpoint($medium) {
@@ -38,8 +38,8 @@
 .logo {
   max-width: 230px;
   float: left;
-  height: 45px;
-  margin: 13px 0;
+  height: 40px;
+  margin: 11px 0;
 
   @include breakpoint($medium) {
     max-width: none;
@@ -68,7 +68,7 @@
 
 .site-header .line {
   width: 323px;
-  margin-top: 19px;
+  margin-top: 14px;
 }
 
 .site-header .email-capture-box {

@@ -28,7 +28,7 @@
 @mixin iconButton($icon-value, $icon-size:125%, $vertical-align:-10%, $include-text:false) {
   line-height: $icon-size;
 
-  @include fontAwesomeIcon($icon-value, $icon-size) {
+  @mixin fontAwesomeIcon($icon-value, $icon-size) {
     vertical-align: $vertical-align;
   }
 
