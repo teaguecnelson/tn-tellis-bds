@@ -90,6 +90,10 @@ add_action('widgets_init', function () {
         'name'          => __('Popular Posts', 'sage'),
         'id'            => 'sidebar-popular-posts'
     ] + $config);
+    register_sidebar([
+        'name'          => __('DIY Submenu', 'sage'),
+        'id'            => 'sidebar-diy-submenu'
+    ] + $config);
 });
 
 /**

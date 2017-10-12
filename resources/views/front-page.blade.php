@@ -4,8 +4,8 @@
   @include('partials.hero-section')
   @include('partials.sidebar-popular-posts')
   @include('partials.email-capture')
-  @include('partials.three-up-categories')
   @include('partials.authenticity-organism')
+
 
   <div class="three-up">
     <h4 class="three-up-header latest-articles-header">The Latest</h4>

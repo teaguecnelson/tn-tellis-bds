@@ -1,8 +1,13 @@
 @extends('layouts.app')
 
 @section('mini-hero')
-  <div class="category-hero">
-    @include('partials.page-header')
+  <div class="category-mini-hero-wrapper">
+    <div class="category-mini-hero">
+      @include('partials.page-header')
+      @if (is_category( 'DIY Projects for Preppers' ))
+        @include('partials.sidebar-diy-submenu')
+      @endif
+    </div>
   </div>
 @endsection
 
