@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
-
 // Font Sizes
 $base-font-size: 18px;
 $small-point-size: $base-font-size * 0.925;
 $xtra-small-point-size: $base-font-size * 0.77;
 
 // Font Families
-$primary-font: 'Crimson Text', serif;
+$primary-font: georgia, serif;
 $secondary-font: sans-serif;
 
 /* --------  Extends Regular Fonts  -------- */

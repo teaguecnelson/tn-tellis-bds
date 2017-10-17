@@ -4,7 +4,7 @@
   <div class="category-mini-hero-wrapper">
     <div class="category-mini-hero">
       @include('partials.page-header')
-      @if (is_category( 'DIY Projects for Preppers' ))
+      @if (is_category( 'DIY &amp; Strategic Living' ))
         @include('partials.sidebar-diy-submenu')
       @endif
     </div>

@@ -44,13 +44,10 @@
 
 .category-mini-hero {
   @include makeColumn($size:10, $offset:1);
-
-  background-color: $bds-light-grey;
-  border-bottom: 2px solid $bds-maroon;
 }
 
 .category .category-title {
-  padding: 1.5rem 0;
+  padding: 0.75rem 0;
   color: $text-color;
   text-align: center;
 }
@@ -61,12 +58,15 @@
 }
 
 .category-mini-hero .menu {
-  padding: 0;
+  padding: 1rem;
+  border-bottom: 2px solid $bds-maroon;
+  border-top: 2px solid $bds-maroon;
+  background-color: $bds-maroon;
 }
 
 .category-mini-hero .menu li a {
   padding: 0 1.5rem;
-  color: $text-color;
+  color: $white;
   text-decoration: none;
   font-family: $secondary-font;
   font-size: $small-point-size;
@@ -75,7 +75,6 @@
   &:hover,
   &:focus,
   &:active {
-    background-color: green;
     color: $white;
   }
 }

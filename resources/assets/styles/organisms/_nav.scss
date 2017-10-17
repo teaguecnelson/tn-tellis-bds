@@ -1,41 +1,8 @@
 .topnav {
   display: block;
   overflow: hidden;
-  background-color: $bds-light-grey;
+  background-color: $bds-maroon;
   width: 100%;
-}
-
-.menu-item {
-  display: inline;
-}
-
-.nav {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.topnav a,
-.topnav .menu-item a {
-  color: $text-color;
-  text-align: center;
-  padding: 1rem 0.5rem;
-  text-decoration: none;
-  font-family: $secondary-font;
-  font-size: $small-point-size;
-  font-weight: bold;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: green;
-    color: $white;
-  }
-}
-
-.nav-wrapper {
-  width: 90%;
-  margin: 0 auto;
 }
 
 .topnav a:not(:first-child),
@@ -52,7 +19,7 @@
 
 .topnav.responsive {
   position: relative;
-  border-bottom: 2px solid $bds-medium-grey;
+  border-bottom: 5px solid lighten($bds-maroon, 10%);
 }
 
 .topnav.responsive a,
@@ -63,6 +30,58 @@
 
   @include breakpoint($medium) {
     display: inline-block;
-    padding: 2.5rem 2rem;
+    padding: 0.5rem 0;
   }
+}
+
+.nav-wrapper {
+  width: 75%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.nav {
+  @include makeRow($no-padding:true);
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu-item {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:4, $offset:0);
+
+  display: inline;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.topnav a,
+.topnav .menu-item a {
+  @extend %homepage-h2;
+
+  color: $white;
+  text-align: left;
+  text-decoration: none;
+  font-family: $secondary-font;
+  font-weight: bold;
+  border-bottom: 1px solid lighten($bds-maroon, 10%);
+  width: 80%;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+  }
+}
+
+.sub-menu {
+  padding-left: 30px;
+}
+
+.sub-menu .menu-item a {
+  color: $white;
+  font-size: $small-point-size;
+  border-bottom: none;
 }
