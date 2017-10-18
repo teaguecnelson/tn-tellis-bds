@@ -1,4 +1,5 @@
 <div class="social-bar">
+	<h4 class="social-bar-header">Did you Find This Article Helpful?</br><span class="social-bar-header-cta">Please share or leave a comment!</span></h4>
 	<div class="social-bar-wrapper">
 		<div class="pin-button">
 		    <a data-pin-do="buttonBookmark" data-pin-tall="true" data-pin-save="true" href="https://www.pinterest.com/pin/create/button/"></a>

@@ -37,14 +37,14 @@
 .nav-wrapper {
   width: 75%;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1.25rem 0;
 }
 
 .nav {
   @include makeRow($no-padding:true);
 
   margin: 0;
-  padding: 0;
+  padding: 0.25rem 0 3rem;
   text-align: center;
 }
 

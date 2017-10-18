@@ -1,11 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.hero-section')
   @include('partials.sidebar-popular-posts')
-  @include('partials.email-capture')
   @include('partials.authenticity-organism')
-
 
   <div class="three-up">
     <h4 class="three-up-header latest-articles-header">The Latest</h4>
@@ -24,4 +21,6 @@
   </div>
 
   {!! get_the_posts_navigation() !!}
+
+  @include('partials.email-capture')
 @endsection

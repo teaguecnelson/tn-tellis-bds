@@ -57,9 +57,11 @@ h6 {
   @include header($small-point-size);
 }
 
-p {
+p,
+%extention-p {
   font-family: $primary-font;
-  font-size: 19px;
-  line-height: 1.5;
-  color: #333;
+  font-size: 1.0625rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+  color: #222;
 }

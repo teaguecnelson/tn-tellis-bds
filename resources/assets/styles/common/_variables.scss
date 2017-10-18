@@ -9,6 +9,7 @@ $bds-dark-grey: #2a2b2a;
 
 $black: #000;
 $white: #fff;
+$page-white: #f7f7f7;
 $charcoal: $bds-dark-grey;
 $placeholder-text-color: $bds-medium-dark-grey;
 
@@ -42,3 +43,8 @@ $lg-card-padding: 0 2rem;
 
 /** Search */
 $search-form-max-width: 970px;
+
+/** Single */
+$entry-content-max-width: 570px;
+$entry-comment-max-width: 640px;
+$entry-content-left-offset: 2.25rem;

@@ -1,7 +1,18 @@
 .social-bar {
   background-color: $bds-brown;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem 2rem 2rem;
+  margin: 0 0 0 -2.25rem;
+}
+
+.social-bar-header {
+  text-align: center;
+  margin: 0 0 1rem;
+  line-height: 2rem;
+}
+
+.social-bar-header-cta {
+  font-size: 0.8em;
 }
 
 .social-bar-wrapper {

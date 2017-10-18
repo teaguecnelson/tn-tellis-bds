@@ -1,6 +1,6 @@
 .single {
   .body {
-    background-color: #f7f7f7;
+    background-color: $white;
   }
 
   .body-wrap {
@@ -36,7 +36,7 @@
     @include makeColumn(md, $size:4, $offset:0);
     @include makeColumn(lg, $size:4, $offset:0);
 
-    margin-top: 7.5rem;
+    margin-top: 10rem;
     padding: 0;
   }
 
@@ -45,11 +45,11 @@
   }
 
   .entry-content {
-    max-width: 630px;
+    max-width: $entry-content-max-width;
     margin: auto;
 
     @include breakpoint($large) {
-      margin: 0 auto 0 2.25rem;
+      margin: 0 auto 0 $entry-content-left-offset;
     }
   }
 
