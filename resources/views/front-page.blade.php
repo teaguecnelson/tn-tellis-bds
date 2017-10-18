@@ -2,6 +2,7 @@
 
 @section('content')
   @include('partials.sidebar-popular-posts')
+  @include('partials.email-capture')
   @include('partials.authenticity-organism')
 
   <div class="three-up">
@@ -22,5 +23,4 @@
 
   {!! get_the_posts_navigation() !!}
 
-  @include('partials.email-capture')
 @endsection

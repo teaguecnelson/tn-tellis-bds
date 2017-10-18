@@ -82,6 +82,11 @@
 
 .sub-menu .menu-item a {
   color: $white;
-  font-size: $small-point-size;
+  font-size: $base-font-size;
   border-bottom: none;
+  padding: 0.5rem 0;
+
+  @include breakpoint($header-medium-breakpoint) {
+    padding: 0.1rem 0;
+  }
 }

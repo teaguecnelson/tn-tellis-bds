@@ -25,6 +25,10 @@
     @include makeColumn($size:12, $offset:0);
     @include makeColumn(md, $size:7, $offset:0);
     @include makeColumn(lg, $size:8, $offset:0);
+
+    @include breakpoint($medium) {
+      padding-right: 4rem;
+    }
   }
 
   .sidebar-wrapper {
