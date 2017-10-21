@@ -37,7 +37,7 @@
     @include makeColumn(lg, $size:4, $offset:0);
 
     margin-top: 10rem;
-    padding: 0;
+    padding: 0 0 0 2rem;
   }
 
   .entry-meta {

@@ -6,11 +6,22 @@
   @include makeRow($no-padding:true);
 }
 
+.swp_popular_posts_title {
+  display: none;
+}
+
 .swp_popular_post {
   @include makeColumn($size:12, $offset:0);
   @include makeColumn(md, $size:4, $offset:0);
 
   text-align: center;
+}
+
+.swp_pop_thumb {
+  float: none;
+  margin: 0;
+  width: 94% !important;
+  height: auto !important;
 }
 
 // In text.scss

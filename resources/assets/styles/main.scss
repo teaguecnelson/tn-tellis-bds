@@ -30,10 +30,11 @@
 @import "molecules/posts_navigation";
 @import "molecules/three_up_mixins";
 @import "molecules/social_bar";
+@import "molecules/nav_bar_primary";
 
 /** Organisms */
 @import "organisms/header";
-@import "organisms/nav";
+@import "organisms/subnav";
 @import "organisms/hero";
 @import "organisms/three_up_styling";
 @import "organisms/sidebar_popular_posts";
@@ -47,7 +48,7 @@
 /** Templates */
 @import "templates/category";
 @import "templates/single";
-@import "templates/front_page";
 @import "templates/search";
 @import "templates/404";
 @import "templates/page_template_default";
+@import "templates/front_page";
