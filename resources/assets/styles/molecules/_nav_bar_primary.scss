@@ -1,0 +1,29 @@
+.nav-bar-primary {
+  background-color: $bds-maroon;
+  padding: 0.5rem 0;
+}
+
+.nav-bar-primary .nav {
+  margin: 0;
+}
+
+.menu-primary-menu-container ul {
+  padding-left: 3.5rem;
+}
+
+.menu-primary-menu-container ul li {
+  display: inline;
+  padding: 0 0.75rem;
+  text-align: left;
+}
+
+.menu-primary-menu-container ul li a {
+  color: $white;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+  }
+}

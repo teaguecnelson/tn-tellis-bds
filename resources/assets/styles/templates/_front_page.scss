@@ -1,4 +1,7 @@
 .home .main {
+  max-width: none;
+  padding: 2rem 0;
+
   // In text.scss
   h2 {
     @extend %homepage-h2;
@@ -7,10 +10,6 @@
     a {
       @extend %home-header-links;
     }
-  }
-
-  p {
-    font-size: 19px;
   }
 
   // In entry-meta.scss

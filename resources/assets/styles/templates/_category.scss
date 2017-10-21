@@ -25,6 +25,10 @@
     @include makeColumn($size:12, $offset:0);
     @include makeColumn(md, $size:7, $offset:0);
     @include makeColumn(lg, $size:8, $offset:0);
+
+    @include breakpoint($medium) {
+      padding-right: 4rem;
+    }
   }
 
   .sidebar-wrapper {
@@ -37,18 +41,46 @@
   }
 }
 
-.category-diy .category-hero {
-  width: 100%;
-  background-image: url("../../images/diy.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+.category-mini-hero-wrapper {
+  background-color: $white;
+  padding: 1.5rem;
 }
 
-.category .page-header {
-  padding: 5rem 0;
-  color: $white;
+.category-mini-hero {
+  @include makeColumn($size:10, $offset:1);
+}
+
+.category .category-title {
+  padding: 0.75rem 0;
+  color: $text-color;
   text-align: center;
+}
+
+.menu-diy-category-submenu-container {
+  text-align: center;
+  padding: 0 0 0.75rem;
+}
+
+.category-mini-hero .menu {
+  padding: 1rem;
+  border-bottom: 2px solid $bds-maroon;
+  border-top: 2px solid $bds-maroon;
+  background-color: $bds-maroon;
+}
+
+.category-mini-hero .menu li a {
+  padding: 0 1.5rem;
+  color: $white;
+  text-decoration: none;
+  font-family: $secondary-font;
+  font-size: $small-point-size;
+  font-weight: bold;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+  }
 }
 
 .category h2 {

@@ -4,7 +4,7 @@
   font-weight: 800;
 }
 
-h1 {
+h1, {
   @include header(2rem);
 
   font-family: $secondary-font;
@@ -15,7 +15,8 @@ h1 {
   }
 }
 
-h2 {
+h2,
+%extention-h2 {
   @include header(1.5rem);
 
   @include breakpoint($large) {
@@ -56,8 +57,11 @@ h6 {
   @include header($small-point-size);
 }
 
-p {
+p,
+%extention-p {
   font-family: $primary-font;
-  font-size: 21px;
-  line-height: 1.35;
+  font-size: 1.0625rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+  color: #222;
 }

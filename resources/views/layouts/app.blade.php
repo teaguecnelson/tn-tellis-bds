@@ -12,7 +12,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
     <div class="add-clear"></div>
     @php(do_action('get_header'))
-    @include('partials.header')
+    @include('partials.header-nav-bar-primary')
     @yield('mini-hero')
     <div class="body-outer-wrap">
       <div class="body-wrap wrap container" role="document">

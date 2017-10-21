@@ -145,3 +145,12 @@ function title()
     }
     return get_the_title();
 }
+
+/**
+ * Filter the Page titles
+ * @return string
+ */
+function filter_category_title($title) {
+  return str_replace('Category: ', '', $title);
+}
+add_filter('get_the_archive_title', __NAMESPACE__ . '\\filter_category_title');
